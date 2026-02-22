@@ -34,21 +34,20 @@ pip install -r requirements.txt
 ```
 
 ### Set environment variables
-- Copy .env.example to .env
-- Set API key(s)
+
+- Copy `.env.example` to `.env` file
 
 ```bash
-export ANTHROPIC_API_KEY="sk-ant-..."
-export GEMINI_API_KEY="AIza..."
-export OPENAI_API_KEY="sk-..."
+cp .env.example .env
 ```
 
-Get your keys:
-- Anthropic → https://console.anthropic.com
-- Gemini    → https://aistudio.google.com/app/apikey
-- OpenAI    → https://platform.openai.com/api-keys
+- Set API key(s) in `.env` file
 
----
+```bash
+ANTHROPIC_API_KEY="sk-ant-..." #  Anthropic → https://console.anthropic.com
+GEMINI_API_KEY="AIza..." # Gemini → https://aistudio.google.com/app/apikey
+OPENAI_API_KEY="sk-..." # OpenAI → https://platform.openai.com/api-keys
+```
 
 ## ▶️ Running the Agent
 
@@ -77,8 +76,8 @@ python main.py gemini gemini-2.5-flash "Write a haiku and save it to haiku.txt"
 
 ## 💬 Example Session
 
-```
-$ python main.py openai gpt-4o-mini
+```bash
+python main.py openai gpt-4o-mini
 
 ✅  OpenAI Agent ready  (gpt-4o-mini)
 
@@ -99,7 +98,7 @@ Goodbye!
 
 ## 🗂️ Project Structure
 
-```
+```bash
 llm-agent-kit/
 ├── main.py               # Entry point, factory, REPL
 ├── tools.py              # Tool functions and schemas (shared)
