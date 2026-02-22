@@ -1,0 +1,5 @@
+# Install all three, or just the ones you need:
+anthropic>=0.34.0
+google-genai
+openai>=1.40.0
+python-dotenv
