@@ -1,4 +1,4 @@
-# 🤖 llm-agent-kit
+# 🤖 LLM Agent Kit
 
 A lightweight, provider-agnostic AI agent with tool calling support for Anthropic, Google Gemini, and OpenAI. Switch providers via CLI or environment variable.
 
@@ -44,9 +44,9 @@ cp .env.example .env
 - Set API key(s) in `.env` file
 
 ```bash
-ANTHROPIC_API_KEY="sk-ant-..." #  Anthropic → https://console.anthropic.com
-GEMINI_API_KEY="AIza..." # Gemini → https://aistudio.google.com/app/apikey
-OPENAI_API_KEY="sk-..." # OpenAI → https://platform.openai.com/api-keys
+ANTHROPIC_API_KEY="" #  Anthropic → https://console.anthropic.com
+GEMINI_API_KEY="" # Gemini → https://aistudio.google.com/app/apikey
+OPENAI_API_KEY="" # OpenAI → https://platform.openai.com/api-keys
 ```
 
 ## ▶️ Running the Agent
